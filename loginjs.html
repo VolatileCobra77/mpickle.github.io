@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+  <body>
+    <script>
+      var username = document.createElement('input');
+      username.type = 'text';
+      username.id = 'username';
+      var password = document.createElement('input');
+      password.type = 'password';
+      password.id = 'password';
+      var submit = document.createElement('input');
+      submit.type = 'submit';
+      submit.id = 'submit';
+      document.body.appendChild(username);
+      document.body.appendChild(password);
+      document.body.appendChild(submit);
+      var username = document.getElementById('username');
+      var password = document.getElementById('password');
+      var submit = document.getElementById('submit');
+      username.value = 'myusername';
+      password.value = 'mypassword';
+      submit.click();
+      window.location = 'http://mrpickle.ca/admin';
+    </script>
+  </body>
+</html>
