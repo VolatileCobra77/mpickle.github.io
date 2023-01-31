@@ -9,9 +9,14 @@
           alert("Username and password must be filled out");
           return false;
         }
-        if (username != "admin" || password != "password") {
+        if (username != "admin" || password != "123") {
           alert("Incorrect username or password");
           return false;
+        }
+        if (username == "admin" || password == "123") {
+          alert("Correct username and password!");
+          window.location.replace("http://www.mrpickle.ca/admin.html");
+          return true;
         }
       }
     </script>
