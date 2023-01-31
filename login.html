@@ -9,15 +9,11 @@
           alert("Username and password must be filled out");
           return false;
         }
-        if (username != "admin" || password != "123") {
+        if (username != "admin" || password != "password") {
           alert("Incorrect username or password");
           return false;
         }
-        if (username == "admin" || password == "123") {
-          alert("Correct username and password!");
-          window.location.href("http://www.mrpickle.ca/admin.html");
-          return true;
-        }
+        window.location.href = "http://www.mrpickle.ca/admin.html";
       }
     </script>
   </head>
