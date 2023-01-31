@@ -17,10 +17,8 @@
       var username = document.getElementById('username');
       var password = document.getElementById('password');
       var submit = document.getElementById('submit');
-      username.value = 'myusername';
-      password.value = 'mypassword';
-      submit.click();
-      window.location = 'http://mrpickle.ca/admin';
+      if (username.value == 'myusername' && password.value == 'mypassword') {
+        window.location = 'http://mrpickle.ca/admin.html';
     </script>
   </body>
 </html>
