@@ -1,18 +1,29 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Login Page</title>
-    <link rel="stylesheet" href="style.css"
-</head>
-<body>
-    <form action="login.php" method="post">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username">
-        <br>
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password">
-        <br><br>
-        <input type="submit" value="Login">
+  <head>
+    <script>
+      function validateForm() {
+        var username = document.forms["loginForm"]["username"].value;
+        var password = document.forms["loginForm"]["password"].value;
+        if (username == "" || password == "") {
+          alert("Username and password must be filled out");
+          return false;
+        }
+        if (username != "admin" || password != "password") {
+          alert("Incorrect username or password");
+          return false;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h2>Login Form</h2>
+    <form name="loginForm" action="" onsubmit="return validateForm()" method="post">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username"><br><br>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password"><br><br>
+      <input type="submit" value="Submit">
     </form>
-</body>
+  </body>
 </html>
