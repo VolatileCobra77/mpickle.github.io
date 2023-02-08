@@ -19,12 +19,12 @@
   </head>
   <body>
     <h2>Login Form</h2>
-    <form name="loginForm" action="" onsubmit="return validateForm()" method="post">
+    <form name="loginForm">
       <label for="username">Username:</label>
       <input type="text" id="username" name="username"><br><br>
       <label for="password">Password:</label>
       <input type="password" id="password" name="password"><br><br>
-      <input type="submit" value="Submit">
+      <button onclick="validateForm()">Submit Form</button>
     </form>
   </body>
 </html>
